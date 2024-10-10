@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thanush's Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Styles for the portfolio */
+        .project {
+            background-color: #ffffff;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Thanush's Portfolio</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#hobbies">Hobbies</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <div class="profile-container">
+            <!-- Static Image with a Round Border -->
+            <img src="./back.jpeg" alt="Profile Photo" class="profile-pic">
+            <p><strong><em>Hi! I'm Thanush, a native of Kumbakonam. I have Completed my Bachelor  degree in Bachelor of Business Administration and am an aspiring Web  Developer with a strong foundation in HTML, CSS, JavaScript,  and SQL. I'm actively seeking opportunities to further develop my skills and contribute to exciting projects.</em></strong></p>        
+        </div>
+    </section>
+    <ul>
+    <section id="skills" class="common-background">
+        <h2>Skills</h2>
+        <ul>
+            <strong><li><h3>Programming Languages:</h3>
+             
+            </li>
+            <li><h3>Web Technologies:</h3> 
+              <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Bootstrap</li>
+                <li>Reactjs</li>
+              </ul>
+            </li>
+            <li><h3>Back-End Technologies:</h3>
+              <ul>
+                <li>Node.js</li>
+              </ul>
+            </li>
+            <li><h3>Databases:</h3>
+              <ul>
+                <li>MongoDB</li>
+              </ul>
+            </li>
+            <li><h3>Tools:</h3>
+              <ul>
+                <li>Git, GitHub</li>
+                <li>Visual Studio Code (VSCode)</li>
+                <li>MS Office (Word, Excel, PowerPoint)</li>
+              </ul>
+            </li></strong>
+          </ul>
+          <h2>Soft Skills</h2>
+          <ul>
+            <li>Time Management</li>
+            <li>Teamwork</li>
+            <li>Adaptability</li>
+          </ul>
+    </section>
+    <section id="education">
+        <h2>Education</h2>
+               <p><strong>Bachelor of Business Administration in (2021-2024)</strong></br>
+                <em>Annai college of Art & science, Kumbakonam.</em>
+                    Percentage - 62.9%</p> 
+        <h2>Certifications</h2>
+        <ol>
+             <li> 
+              <p>Web Development Bootcamp</p>
+              <p>Organization: NoviTech R&D Private Limited</p> 
+              <p>Description: Completed a comprehensive program covering HTML, CSS, JavaScript and backend Development using Node.js.</p>
+              </li> 
+             <li>          
+              <p>Personality Development </p>
+              <p>Issued Organization: tcs</p>
+              <p>Description :i heve completed 15 days work shop,Personality Development corporate etiquette & quantitative Aptitude along with Interview skills demo & mock Interview practice session (Final year UG student 2024 (jan))</p>
+            </li>  
+        </ol>
+    </section>
+    <section id="projects" >
+      <h2 class="proHeading">Projects</h2>
+      
+     <div class="project">
+          <h3>Video Conference Project</h3>
+          <p><strong>The Video Conference Project enables users to register, log in and join video calls with features such as viewing up to Five participants and visualizing active speakers. The Client side handles user interface interactions, while the server side manages authentication, profile updates and call information are securely stored in the backend. The project was developed using IDE for code management, with the server hosting real-time connections and handling video call sessions efficiently.</strong></p>
+          <ul>
+           <li>Server Side : Node.js</li>
+           <li>Client Side : HTML, CSS, JavaScript</li>
+           <li>IDE         : VSCode</li>
+           <li>Backend     : MongoDB</li>
+          </ul>
+        </div>
+    <section id="hobbies">
+        <h2>Hobbies</h2>
+        <ul>
+            <li>Playing cricket </li>
+            <li>Watching sports</li>
+        </ul>
+    </section>
+    
+    <section id="contact">
+        <h2 class="contact">Contact</h2>
+        <p>Gmail: thanushthanush20030018@gmail.com</span></p>
+        <p>Phone:+91 9345595184 </span></p>
+        <p>Address: 261,kaliyamamn kovil street, Thandalam, Kumbakonam, Thanjavur, Tamil Nadu - 612 402</p>
+    </section>
+<section id="email-form">
+  <form action="https://formspree.io/f/xrbgzvvz" method="POST"> 
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+
+     <label for="message">Message:</label>
+     <textarea id="message" name="message" required></textarea>
+
+     <button type="submit">Send</button>
+</form>
+</section>
+<footer>
+  <div class="footer-content">
+    <div class="social-icons">
+      <a href="https://www.linkedin.com/in/thanush18" target="_blank">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a href="https://github.com/thanush37" target="_blank">
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+  </div>
+</footer>
+    <script src="config.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+            const emailElement = document.getElementById('contact-email');
+            const phoneElement = document.getElementById('contact-phone');
+
+            if (emailElement) {
+                emailElement.textContent = config.contactEmail;
+            }
+
+            if (phoneElement) {
+                phoneElement.textContent = config.contactPhone;
+            }
+        });  
+    </script>
+</body>
+</html>
